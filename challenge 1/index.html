@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>encriptador de texto</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="java.js"></script>
+</head>
+<body>
+    <header class="logo">
+        <img src="imagenes alura/Logo.png" alt="logo">
+    </header>
+
+    <main class="contenedor">
+        <div class="izquierda">
+            <input id="ingresar" type="text" placeholder="Ingrese el texto aquí" >
+        </div>
+
+        <div class="derecha">
+            
+            <img id= "chico" src="imagenes alura/Muñeco.png" alt="la imagen no pudo cargar correctamente">
+            <h1 id= "texto"> Ningún mensaje fue encontrado</h1>
+            <p id="mensaje">Ingresa el texto que desees encriptar o desencriptar</p>
+            <button type="button" id="copiar" onclick= "copiar()" >Copiar</button>
+        </div>
+
+        <div class="botonera">
+            <p id="advetencia"> 
+                <img src="imagenes alura/exclamacion.png" alt="advertencia">
+                 solo letras minúsculas y sin acentos
+            </p>
+            <button type="button" id="encriptar" onclick="encriptar()" >Encriptar</button>
+            <button type="button" id="desencriptar" onclick= "desencriptar()" >Desencriptar</button>
+        </div>
+    </main>
+    <footer id="nombre"> Iberne Vicino</footer>
+</body>
+</html>
